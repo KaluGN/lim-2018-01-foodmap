@@ -45,11 +45,12 @@ const llamadoError = () => {
 //Solicitud síncrona XMLHttpRequest
 const getPlaces = (url, callback) => {
 const xhr = new XMLHttpRequest();
-xhr.open('GET', list, false); 
+xhr.open('GET', "../database/restaurantes.json", false); 
 xhr.send(null);
 if(xhr.status == 0)
   dump(xhr.responseText);
 console.log(xhr);
+// const dataPlaces = JSON.parse(event.target.responseText);
 };
 
 /* //Solicitud asíncrona XMLHttpRequest
@@ -72,8 +73,18 @@ const callPlaces = (event) => {
   console.log(event.target.responseText);
   const dataPlaces = JSON.parse(event.target.responseText);
   console.log(dataPlaces);
-  let recorrerPlaces = dataPlaces.filter(elementUser => elementUser.role === 'student');
-  options.cohortData.users = recorrerUserStats;
+  search.addEventListener('keyup', function () {
+    list.name = name.value;
+    let data = findingFood(getPlaces);
+    //console.log(data);
+    addPlaces.innerHTML = '';
+    // console.log(showUser(data));
+    viewUser(data);
+    // console.log(showUser(data));
+    
+  })
+  // let recorrerPlaces = dataPlaces.filter(elementUser => elementUser.name === '');
+  // options.cohortData.users = recorrerPlaces;
 };
  getPlaces(list, callPlaces)
 
@@ -104,3 +115,18 @@ const placesNear = (option) => {
   });
 }
 
+
+/* 
+let buscados = getPlaces.filter(getPlaces => getPlaces.name.value);
+console.log(buscados);
+
+let greaterTen = "";
+
+for (let i = 0; i<numbers.length; i++) {
+  var currentNumber = numbers[i];
+  if (currentNumber > 10) {
+    greaterTen.push(currentNumber)
+  }
+}
+
+console.log(greaterTen);  */

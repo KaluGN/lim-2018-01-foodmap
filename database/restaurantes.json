@@ -38,7 +38,7 @@
     "district": "Ancón",
     "type food": "Pescados y mariscos",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "ceviches", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -69,7 +69,7 @@
     "name": "Rustica",
     "direction": "Plaza de Barranco",
     "district": "Chaclacayo",
-    "type food": "Bar y restaurante",
+    "type food": "CAfé bar",
     "food": {
       "carnes": "parrillas", 
       "bebidas": "tragos cortos"
@@ -77,23 +77,23 @@
     "price scale": "$$"
   },
   {
-    "name": "Rustica",
-    "direction": "Plaza de Barranco",
+    "name": "La casa del Pescado",
+    "direction": "Prolongación Huaylas",
     "district": "Chorrillos",
-    "type food": "Bar y restaurante",
+    "type food": "Pescados",
     "food": {
-      "carnes": "parrillas", 
-      "bebidas": "tragos cortos"
+      "carnes": "sudado", 
+      "bebidas": "bebidas"
     },
     "price scale": "$$"
   },
   {
     "name": "Rustica",
-    "direction": "Plaza de Barranco",
+    "direction": "Via Principal",
     "district": "Cieneguilla",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "chicharrones", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -104,7 +104,7 @@
     "district": "Comas",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "pastas", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -115,7 +115,7 @@
     "district": "El Agustino",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "ceviche", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -126,7 +126,7 @@
     "district": "Huaycan",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "tallarines", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -137,7 +137,7 @@
     "district": "Independencia",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "comida piurana", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -148,7 +148,7 @@
     "district": "Jesús María",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "comida chinchana", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -159,7 +159,7 @@
     "district": "La Molina",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "comida arequipeña", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -170,7 +170,7 @@
     "district": "La Victoria",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "arepas", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -181,7 +181,7 @@
     "district": "Lima cercado",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "comida mexicana", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -192,7 +192,7 @@
     "district": "Lince",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "lentejas", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -203,7 +203,7 @@
     "district": "Los Olivos",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "arroz con pollo", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -214,7 +214,7 @@
     "district": "Lurigancho",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "anticuchos", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -225,7 +225,7 @@
     "district": "Lurín",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "rachi", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -236,7 +236,7 @@
     "district": "Magdalena del Mar",
     "type food": "Pizzería",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "pancita", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -247,7 +247,7 @@
     "district": "Miraflores",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "sushi", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -258,7 +258,7 @@
     "district": "Pachacamac",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "makis", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -269,7 +269,7 @@
     "district": "Pucusana",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "comida japonesa", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -280,7 +280,7 @@
     "district": "Pueblo Libre",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "caldo de gallina", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -302,8 +302,8 @@
     "district": "Punta Hermosa",
     "type food": "Cevichería",
     "food": {
-      "carnes": "parrillas", 
-      "bebidas": "tragos cortos"
+      "carnes": "trucha", 
+      "bebidas": "limonada"
     },
     "price scale": "$$"
   },
@@ -313,7 +313,7 @@
     "district": "Punta Negra",
     "type food": "Bar y restaurante",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "salmon", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
@@ -322,9 +322,9 @@
     "name": "Rustica",
     "direction": "Plaza de Barranco",
     "district": "Rímac",
-    "type food": "Bar y restaurante",
+    "type food": "vegetariano",
     "food": {
-      "carnes": "parrillas", 
+      "carnes": "vegetariano", 
       "bebidas": "tragos cortos"
     },
     "price scale": "$$"
