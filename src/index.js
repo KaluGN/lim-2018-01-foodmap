@@ -20,73 +20,40 @@ $('.carousel').carousel({
   interval: 2000
 })
 
-// $(document).ready (() => {
-//   $("#splash").fadeOut('slow');
-// })
-
-const list = "../database/restaurantes.json";
-// console.log(list);
-
-
-/* //Funcion que me perimite hacer la petición de la data que está en mi archivo json
-const getPlaces = (url, callback) => {
-  console.log(getPlaces);
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', url);
-  xhr.onload = callback;
-  xhr.onerror = llamadoError;
-  xhr.send();
-};
-const llamadoError = () => {
-  console.log('se produjo un error')
-} */
-
+let lists = "../database/restaurantes.json";
 
 //Solicitud síncrona XMLHttpRequest
 const getPlaces = (url, callback) => {
-const xhr = new XMLHttpRequest();
-xhr.open('GET', "../database/restaurantes.json", false); 
-xhr.send(null);
-if(xhr.status == 0)
-  dump(xhr.responseText);
-console.log(xhr);
-// const dataPlaces = JSON.parse(event.target.responseText);
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', "../database/restaurantes.json", false);
+  xhr.onload = callback;
+  xhr.send();
+  if (xhr.status == 4)
+    var lists = lists.parse(xhr.responseText);
+  console.log(xhr);
 };
 
-/* //Solicitud asíncrona XMLHttpRequest
-const getPlaces = (url, callback) => {
-  console.log(getPlaces);
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', list, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4) {
-       if(xhr.status == 200)
-       var data = JSON.parse(event.target.responseText);
-       else
-        data("Error loading page\n");
-    }
-  };
-  xhr.send();
-} */
-
+// const getPlaces = xhr;
+// xhr.onreadystatechange = () => {
+//   if (xhr.readyState == 4 && xhr.status == 200) {
+//     var lists = JSON.parse(xhr.responseText);
+//     document.getElementById("show-options").innerHTML = lists[name];
+//   };
+// }
 const callPlaces = (event) => {
   console.log(event.target.responseText);
   const dataPlaces = JSON.parse(event.target.responseText);
   console.log(dataPlaces);
   search.addEventListener('keyup', function () {
-    list.name = name.value;
+    lists.name = name.value;
     let data = findingFood(getPlaces);
     //console.log(data);
     addPlaces.innerHTML = '';
-    // console.log(showUser(data));
     viewUser(data);
-    // console.log(showUser(data));
-    
   })
-  // let recorrerPlaces = dataPlaces.filter(elementUser => elementUser.name === '');
-  // options.cohortData.users = recorrerPlaces;
+  // document.getElementById("show-options").innerHTML = lists[name];
 };
- getPlaces(list, callPlaces)
+getPlaces(getPlaces, callPlaces)
 
 //Plantilla parra los restaurantes
 const placesNear = (option) => {
@@ -113,20 +80,5 @@ const placesNear = (option) => {
       </div>
 `;
   });
+  document.getElementById("show-options").innerHTML = lists[name];
 }
-
-
-/* 
-let buscados = getPlaces.filter(getPlaces => getPlaces.name.value);
-console.log(buscados);
-
-let greaterTen = "";
-
-for (let i = 0; i<numbers.length; i++) {
-  var currentNumber = numbers[i];
-  if (currentNumber > 10) {
-    greaterTen.push(currentNumber)
-  }
-}
-
-console.log(greaterTen);  */
